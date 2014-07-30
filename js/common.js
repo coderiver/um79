@@ -3,7 +3,7 @@ head.ready(function() {
 		event.preventDefault();
         idd = $(this).attr('href')
         $('html, body').animate({
-            scrollTop: $(idd+'').offset().top -160
+            scrollTop: $(idd+'').offset().top -30
         }, 500);
 	});
 	// $(document).on("click", function(){
@@ -17,7 +17,7 @@ head.ready(function() {
 		idd = $(this).data('toshow');
 		$('#'+idd).show();
 	});
-	$(".catalog4-2-left,.news__company1-0").sticky({topSpacing:10});
+	$(".catalog4-2-left,.tofix").sticky({topSpacing:10});
 
 	gotomenu($( ".pg__menu li" ).index( $('.pg__menu li.is-active')));
 	function gotomenu(n){
