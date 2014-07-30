@@ -5,6 +5,8 @@ head.ready(function() {
         $('html, body').animate({
             scrollTop: $(idd+'').offset().top -30
         }, 500);
+        $('.news__link-year').removeClass('is-selected__year');
+        $(this).addClass('is-selected__year');
 	});
 	// $(document).on("click", function(){
 	// 	$(".js-popup").hide();
