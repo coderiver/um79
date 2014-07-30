@@ -1,10 +1,23 @@
 head.ready(function() {
-
+	$('.news__link-year').click(function(event) {
+		event.preventDefault();
+        idd = $(this).attr('href')
+        $('html, body').animate({
+            scrollTop: $(idd+'').offset().top -160
+        }, 500);
+	});
 	// $(document).on("click", function(){
 	// 	$(".js-popup").hide();
 	// });
-	
-	$(".catalog4-2-left").sticky({topSpacing:10});
+	$('.tabs__mark').click(function(event) {
+		event.preventDefault();
+		$('.tabs__mark').removeClass('is-active__mark');
+		$(this).addClass('is-active__mark');
+		$('.bb').hide();
+		idd = $(this).data('toshow');
+		$('#'+idd).show();
+	});
+	$(".catalog4-2-left,.news__company1-0").sticky({topSpacing:10});
 
 	gotomenu($( ".pg__menu li" ).index( $('.pg__menu li.is-active')));
 	function gotomenu(n){
