@@ -7,6 +7,7 @@
 	<link rel="stylesheet" media="screen" href="css/fotorama.css" >
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
 <body>
 
@@ -40,7 +41,7 @@
 						<div class="pg__heading">
 							<h1>Портфолио</h1>
 						</div>
-						<div class="pg__menu">
+						<div class="pg__menu"><div class="pg__menuline"></div>
 							<ul>
 								<li><a href="#">Все</a></li>
 								<li><a href="#">Торговые центры</a></li>
@@ -146,7 +147,29 @@
 							<!--map-->
 							<div class="wrapper-ymap">
 								<h5 class="history__date-subheading">Расположение объекта</h5>
-								<div class="ymap">
+												<script>
+												ymaps.ready(init);
+
+												function init () {
+												    var myMap = new ymaps.Map("ymap", {
+												            center: [55.76, 37.64],
+												            zoom: 10
+												        });
+
+												     pl1 = new ymaps.Placemark([55.684758, 37.738521], {
+												              balloonContent: '<div class="bco"><h3>ТЦ “Galileo”</h3>г. Минск, ул. Бобруйская 6, 3-й этаж Тел/факс: +375 (17) 394-91-11 Режим работы: пн-пт.: 10 - 20, сб-вс.: 11-18.</div>'
+												        }, {
+												            preset: 'islands#icon',
+												            iconColor: '#0095b6'
+												        });
+												 
+
+												    myMap.geoObjects
+												        .add(pl1);
+												}
+
+								</script>
+								<div class="ymap" id="ymap">
 									
 								</div>
 								<span class="wrapper-ymap__address">

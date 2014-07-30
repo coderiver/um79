@@ -6,6 +6,7 @@
 	<meta name="viewport" content="initial-scale=1"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
 <body>
 
@@ -39,7 +40,7 @@
 						<div class="pg__heading">
 							<h1>Контактная информация</h1>
 						</div>
-						<div class="pg__menu">
+						<div class="pg__menu"><div class="pg__menuline"></div>
 							<ul>
 								<li><a href="#">Карта проезда</a></li>
 								<li><a href="#">Форма обратной связи</a></li>
@@ -51,7 +52,30 @@
 		</div>
 		
 		<div class="wrapper-content">
+						<script>
+						ymaps.ready(init);
+
+						function init () {
+						    var myMap = new ymaps.Map("actualmap", {
+						            center: [55.76, 37.64],
+						            zoom: 10
+						        });
+
+						     pl1 = new ymaps.Placemark([55.684758, 37.738521], {
+						              balloonContent: '<div class="bco"><h3>ТЦ “Galileo”</h3>г. Минск, ул. Бобруйская 6, 3-й этаж Тел/факс: +375 (17) 394-91-11 Режим работы: пн-пт.: 10 - 20, сб-вс.: 11-18.</div>'
+						        }, {
+						            preset: 'islands#icon',
+						            iconColor: '#0095b6'
+						        });
+						 
+
+						    myMap.geoObjects
+						        .add(pl1);
+						}
+
+		</script>
 					<div id="mymap">
+						<div id="actualmap"></div>
 						<div class="mymap__popup">
 							<h3 class="object__heading">Офис в Минске</h3>
 							<span class="mymap__popup-address">220075, г. Минск, ул. Селицкого, д. 27, корп. 2</span>
