@@ -80,8 +80,8 @@ body { background: white; }
 
 .header__number { float: right; font-family: pn regular; font-size: 16px; color: white; margin-top: 109px; }
 
-.header__heading { float: left; margin-top: 173px; width: 100%; text-align: left; }
-.header__heading h1 { display: block; float: left; width: 680px; letter-spacing: 2.9px; line-height: 1.55; font-size: 40px; color: white; font-family: pn bold; }
+.header__heading { float: left; margin-top: 173px; width: 100%; text-align: left; font-weight: normal; }
+.header__heading h1 { display: block; float: left; width: 680px; letter-spacing: 2.9px; line-height: 1.55; font-size: 40px; color: white; font-family: pn bold; font-weight: normal; }
 .header__heading h1 a { color: #fbeb93; border-bottom: 1px solid #fbeb93; padding-bottom: 1px; }
 
 .promo { width: 100%; clear: both; float: left; padding-top: 335px; }
