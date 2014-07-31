@@ -1,4 +1,25 @@
 head.ready(function() {	
+	$('.js-nextstep').click(function(event) {
+		event.preventDefault();
+		$('.toggleme').toggle();
+	});
+	$('.popup__close,.overlay').click(function(event) {
+		event.preventDefault();
+		$('.popup').removeClass('is-visible');
+		$('.overlay').fadeOut();
+	});
+	$('.popup__menu a').click(function(event) {
+		event.preventDefault();
+		$('.popup__menu a').removeClass('is-selected-popup__link');
+		$(this).addClass('is-selected-popup__link');
+	});
+	$('.js-popup').click(function(event) {
+		event.preventDefault();
+		idd = $(this).data('popup');
+		$('#'+idd).addClass('is-visible');
+		$('.overlay').fadeIn();
+	});
+
 	$('body').addClass('a');
 	$('.news__link-year').click(function(event) {
 		event.preventDefault();
