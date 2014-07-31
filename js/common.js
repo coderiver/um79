@@ -1,4 +1,27 @@
 head.ready(function() {	
+	$('#header__medias').cycle({
+	    speed: 600,
+	    manualSpeed: 400,
+	    slides: '.header__media',
+	    pager: '#pagi'
+	});
+	$('#objs').cycle({
+	    speed: 600,
+	    manualSpeed: 400,
+	    slides: '.obj'
+	});
+
+	$( '#header__medias' ).on( 'cycle-before', function( event, opts ) {
+	    // your event handler code here
+	    // argument opts is the slideshow's option hash
+	    console.log(opts);
+	    $('#objs').cycle('goto', opts.nextSlide);
+	    if(opts.nextSlide==1){
+	    	$('#vi').get(0).play();
+	    	// alert('a');
+	    }
+	});
+
 
 	$('.sorting__link').click(function(event) {
 		event.preventDefault();

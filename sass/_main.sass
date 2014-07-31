@@ -26,8 +26,54 @@ body
 	background: url(../img/filter-bg.png) repeat-x
 .index01
 	background: url(../img/layer57psd.jpg) no-repeat 
+	background-size: cover
 	background-position: center top
 
+.header
+	position: relative
+	.header__in
+		max-width: 1600px
+		min-width: 1024px
+		width: 95.708%
+		max-width: 1460px
+		padding: 0px 2.146% 0px 2.146%
+		margin: 0 auto
+		+clr
+		position: relative
+		z-index: 2 
+	.header__medias
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0    
+		z-index: 1 
+		overflow: hidden
+	.header__mediaover
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		background: url(../img/filter-bg.png) repeat-x    
+	.header__media
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0    
+		z-index: 1 
+		video
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			height: 100% 
+			@media (min-width: 1460px)
+				height: auto 
+				width: 100% 
+				
 .wrapper
 	margin: 0 auto
 	width: 95.708%
@@ -44,6 +90,8 @@ body
 	top: 38px
 	left: 0px
 	width: 26.6%
+	#indexpage &
+		left: 2% 
 	
 
 .logo
@@ -156,7 +204,7 @@ body
 			color: #fbeb93
 			border-bottom: 1px solid #fbeb93
 			padding-bottom: 1px
-			+transition(all 0.5s ease)
+			// +transition(all 0.5s ease)
 		a:hover
 			border: none
 		
@@ -181,13 +229,18 @@ body
 	bottom: 0px
 	height: 104px
 	left: 0px
-.sidebar__line
+#pagi
+	+clr
+.sidebar__line,#pagi a, #pagi span
 	height: 3px
 	width: 42px
 	float: left
 	background: #13ba5a
 	margin-right: 10px
-.is-selected-video
+	cursor: pointer
+	display: inline-block
+	+hide-text
+.is-selected-video,#pagi a.cycle-pager-active,#pagi span.cycle-pager-active
 	background: white
 .sidebar__object-name
 	clear: both
@@ -1860,6 +1913,8 @@ select
 		top: 38px
 		left: 0px
 		width: 26%
+		#indexpage &
+			left: 2% 
 	.sidebar__menu
 		width: 100%
 		float: left
