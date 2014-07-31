@@ -471,7 +471,12 @@ body { background: white; }
 
 .catalog4-1-right__sorting { border-bottom: 1px solid #e2e2e2; float: left; width: 100%; max-width: 950px; padding-top: 20px; background: #f8f8f8; }
 .catalog4-1-right__sorting span { float: left; margin: 11px 15px 15px 30px; font-family: pn regular; font-size: 13px; color: #383838; line-height: 1; display: block; }
-.catalog4-1-right__sorting .sorting__link { float: left; margin: 11px 0px 15px 15px; font-family: pn regular; font-size: 13px; color: #4995f0; line-height: 1; display: block; border-bottom: 1px dotted #4995f0; }
+.catalog4-1-right__sorting .sorting__link { float: left; margin: 6px 0px 15px 15px; padding: 5px 5px; font-family: pn regular; font-size: 13px; color: #4995f0; line-height: 1; display: block; }
+.catalog4-1-right__sorting .sorting__link b { border-bottom: 1px dotted #4995f0; font-weight: normal; }
+.catalog4-1-right__sorting .sorting__link.is-active { background: #4995f0; color: white; padding-right: 20px; position: relative; }
+.catalog4-1-right__sorting .sorting__link.is-active span { bottom: none; }
+.catalog4-1-right__sorting .sorting__link.is-active:before { width: 5px; height: 4px; position: absolute; content: " "; right: 10px; top: 50%; margin-top: -2px; background: url(../img/select-arrow.png) no-repeat 0 0; }
+.catalog4-1-right__sorting .sorting__link.is-rotated:before { -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); transform: rotate(180deg); }
 
 .select { float: left; position: relative; height: 27px; width: 153px; margin-top: 2px; }
 

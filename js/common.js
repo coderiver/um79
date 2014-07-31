@@ -1,4 +1,15 @@
 head.ready(function() {	
+
+	$('.sorting__link').click(function(event) {
+		event.preventDefault();
+		if($(this).hasClass("is-active")){
+			$(this).toggleClass('is-rotated');
+		}
+		else{
+			$('.sorting__link').removeClass('is-active');
+			$(this).addClass('is-active');
+		}
+	});
 	$('.js-nextstep').click(function(event) {
 		event.preventDefault();
 		$('.toggleme').toggle();
