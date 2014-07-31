@@ -102,6 +102,10 @@ body
 	margin-right: 17px
 	letter-spacing: 1.2px
 	cursor: pointer
+	+transition(all 0.5s ease)
+.header__button:hover
+	color: white
+	background: #18cb64
 .is-first-hb
 	color: black
 	padding: 17px 16px 14px 18px
@@ -111,6 +115,8 @@ body
 	padding: 16px 15px 13px 14px
 	border: 1px solid white
 	margin-right: 35px
+.is-second-hb:hover
+	border-color: #18cb64
 .header__lang
 	font-family: pn bold
 	font-size: 12px
@@ -150,12 +156,15 @@ body
 			color: #fbeb93
 			border-bottom: 1px solid #fbeb93
 			padding-bottom: 1px
+			+transition(all 0.5s ease)
+		a:hover
+			border: none
 		
 .promo
 	width: 100%
 	clear: both
 	float: left
-	padding-top: 335px
+	padding-top: 23%
 	
 .promo__bottom
 	position: relative
@@ -169,7 +178,8 @@ body
 	padding: 0px 2% 0px 6.05%
 	clear: both
 	position: absolute
-	top: -101px
+	bottom: 0px
+	height: 104px
 	left: 0px
 .sidebar__line
 	height: 3px
@@ -202,7 +212,7 @@ body
 	float: left
 	width: 73.4%
 	position: absolute
-	top: -102px - 28px
+	bottom: 0px
 	right: 0px
 	height: 104px 
 	overflow: hidden 
@@ -297,11 +307,13 @@ body
 	max-width: 266px
 	img
 		opacity: 0
+
 .wrapper-content
 	float: left
 	clear: both
 	width: 100%
 	background: white
+
 .wrapper-white
 	margin: 0 auto
 	width: 95.708%
@@ -330,6 +342,7 @@ body
 	font-size: 14px
 	line-height: 1.8
 	letter-spacing: 0px
+	display: block
 .news__date
 	font-family: pn regular
 	color: black
@@ -497,7 +510,7 @@ body
 	line-height: 1.4
 	float: right
 	color: #616161
-	width: 112px
+	width: 120px
 	margin-right: 42px
 
 
@@ -909,6 +922,9 @@ body
 		margin-bottom: 14px
 	span
 		letter-spacing: -0.1px
+		clear: both
+		display: block
+		width: 100%
 .mymap__popup-address
 	color: #616161
 	font-family: pn bold
@@ -930,8 +946,10 @@ body
 	letter-spacing: 1.2px
 	text-align: center
 	display: block
+	+transition(all 0.5s ease)
 #mymap__button:hover
 	color: white
+	background: lighten(#18cb64, 8%)
 .folio3-0
 	background: url(../img/folio3-0.jpg) no-repeat
 	background-position: center -60px
@@ -1040,8 +1058,6 @@ body
 	
 .is-padding-124
 	padding-top: 128px
-	.promo__bottom
-		margin-top: -2px
 .wrp-items
 	float: left
 	width: 100%
@@ -1188,9 +1204,11 @@ body
 	text-align: center
 	padding: 15px 0px 13px 0px
 	display: block
+	+transition(all 0.5s ease)
 .catalog4-2-left
 	.catalog4-2-left__button:hover
 		color: white
+		background: lighten(#18cb64, 8%)
 .catalog4-2-right
 	padding-top: 21px
 	float: left
@@ -1298,7 +1316,8 @@ body
 		margin-bottom: 0px
 		padding-bottom: 0px
 		letter-spacing: 1.6px
-
+.is-margin-top
+	margin-top: 20px
 .catalog4-2-crane
 	width: 245px
 	margin: 0px
@@ -1412,6 +1431,7 @@ body
 	background: #4995f0
 	height: 27px
 	padding: 5px 0px 5px 0px
+	border-radius: 0px
 	border: none
 	color: white
 	font-family: pn semibold
@@ -1752,7 +1772,9 @@ select
 	text-align: center
 	padding: 15px 0px 13px 0px
 	display: block
-
+	+transition(all 0.5s ease)
+.popup__submit:hover
+	background: lighten(#18cb64, 8%)
 .popup__text
 	margin-top: 13px
 	width: 185px	
@@ -1828,8 +1850,6 @@ select
 		padding: 0px 7% 0px 0%
 		clear: both
 		position: absolute
-		top: -100px
-		left: 0px
 	
 	.pg
 		float: right
@@ -1843,3 +1863,10 @@ select
 	.catalog4-1-right
 		width: 74%
 		padding-right: 0px
+
+=r1
+	@media only screen and (max-width: 1280px)
+		@content
++r1
+	.promo__link
+		padding: 24px 1.57% 0px 1.6%
