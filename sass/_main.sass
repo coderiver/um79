@@ -202,10 +202,27 @@ body
 	float: left
 	width: 73.4%
 	position: absolute
-	top: -102px
+	top: -102px - 28px
 	right: 0px
+	height: 104px 
+	overflow: hidden 
+	padding-top: 28px 
 .promo__item
 	background: #28dd75
+	position: relative
+	top: 104px 
+	// +translate(0, 104px)
+	+transition(all .6s ease)
+	// +gpu
+	&+.promo__item
+		+transition-delay(.2s)
+	&+.promo__item+.promo__item
+		+transition-delay(.4s)
+	&+.promo__item+.promo__item+.promo__item
+		+transition-delay(.6s)
+	.a &
+		// +translate(0, 0)
+		top: 0 
 .promo__link
 	float: left
 	border-left: 1px solid #18cb64
@@ -222,6 +239,7 @@ body
 	background: #18cb64
 	position: relative
 	max-width: 230px
+	
 	@media screen and (max-width: 1200px)
 		font-size: 14px
 	img
@@ -244,16 +262,34 @@ body
 		+transition(all 0.7s ease)
 .promo__link-bg
 	background: #13ba5a
-.promo__link:hover
-	margin-top: -28px
-	background: url(../img/promo-item-bord.png) repeat-x top left
-	background-color: none
-	padding-bottom: 28px
-	color: #18cb64
-	img
-		opacity: 0
-	span.promo__ctlg
-		opacity: 0.8
+.promo__link
+	position: relative
+	&:before
+		content: ' '
+		position: absolute
+		top: 0
+		left: 0 
+		height: 2px  
+		background: #21D56D
+		width: 100%  
+		+transition(all .3s ease)
+		opacity: 0 
+	&:hover
+		margin-top: -28px
+		// background: url(../img/promo-item-bord.png) repeat-x top left
+		background: transparent 
+		// background-color: none
+		box-shadow: inset 0 2px 0 2px -2px #21D56D
+		padding-bottom: 28px
+		color: #18cb64
+		+transition(all .3s ease)
+		position: relative
+		&:before
+			opacity: 1
+		img
+			opacity: 0
+		span.promo__ctlg
+			opacity: 0.8
 .is-selected-promo__link
 	background: url(../img/promo-item-bord.png) no-repeat top left
 	background-color: none
@@ -1604,6 +1640,7 @@ select
 	font-size: 30px
 	color: black
 	letter-spacing: 2px
+	font-weight: normal
 .popup__menu
 	float: left
 	margin-top: 45px
