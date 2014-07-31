@@ -41,8 +41,8 @@
 		</ul>
 	</div>
 	<div class="header__content">
-		<a href="#" class="header__button is-first-hb">ЗАКАЗАТЬ ТЕХНИКУ</a>
-		<a href="#" class="header__button is-second-hb">ПЕРЕЗВОНИТЕ</a>
+		<a class="header__button is-first-hb js-popup" data-popup="popup1">ЗАКАЗАТЬ ТЕХНИКУ</a>
+		<a href="#" class="header__button is-second-hb js-popup" data-popup="popup2">ПЕРЕЗВОНИТЕ</a>
 		<a href="#" class="header__lang">ENG</a>
 		<a href="#" class="header__lang is-selected-lang">РУС</a>
 		<div class="header__number">+375 (17) 344-61-23</div>
@@ -174,6 +174,146 @@
 </div>
 <!-- END out-->
 
+
+
+<div class="popup popup1" id="popup1">
+	<form>
+		<div class="popup__close"></div>
+		<h3 class="popup__heading">Заказать технику в аренду</h3>
+		
+		<div class="toggleme toggleme_first">
+		<ul class="popup__menu">
+			<li class="popup__item"><a href="#" class="popup__link is-selected-popup__link">Башенный<br />кран</a></li>
+			<li class="popup__item"><a href="#" class="popup__link">Автомобильный<br />кран</a></li>
+			<li class="popup__item"><a href="#" class="popup__link">Грузопассажирский<br />подъёмник</a></li>
+			<li class="popup__item"><a href="#" class="popup__link is-last-popup__link">Мачтовая самоходная<br />рабочая платформа</a></li>
+		</ul>
+		<div class="popup__content popup__content_green">
+			<div class="popup__left-column">
+				<div class="sublabel">Грузоподъёмность, <span>тонн</span></div>
+				<select class="popup__select-big">
+					<option value="#">Любая</option>
+					<option value="#">Любая</option>
+					<option value="#">Любая</option>
+					<option value="#">Любая</option>
+				</select>
+				<div class="sublabel">Вылет стрелы, <span>метров</span></div>
+				<div class="is-left">
+				<label>от</label>
+				<select class="popup__select-small">
+					<option value="#">60</option>
+					<option value="#">60</option>
+					<option value="#">60</option>
+					<option value="#">60</option>
+				</select>
+				</div>
+				<div class="is-right">
+					<label>до</label>
+					<select class="popup__select-small">
+						<option value="#">120</option>
+						<option value="#">120</option>
+						<option value="#">120</option>
+						<option value="#">120</option>
+					</select>
+				</div>
+			</div>
+			<div class="popup__right-column">
+				<div class="sublabel">Подъём крюка, <span>метров</span></div>
+				<div class="is-left">
+					<label>от</label>
+					<select class="popup__select-small">
+						<option value="#">20</option>
+						<option value="#">20</option>
+						<option value="#">20</option>
+						<option value="#">20</option>
+					</select>
+				</div>
+				<div class="is-right">
+					<label>до</label>
+					<select class="popup__select-small">
+						<option value="#">200</option>
+						<option value="#">200</option>
+						<option value="#">200</option>
+						<option value="#">200</option>
+					</select>
+				</div>
+				<div class="sublabel">Подъём крюка, <span>метров</span></div>
+				<div class="is-left">
+					<label>от</label>
+					<select class="popup__select-small">
+						<option value="#">20</option>
+						<option value="#">20</option>
+						<option value="#">20</option>
+						<option value="#">20</option>
+					</select>
+				</div>
+				<div class="is-right">
+				<label>до</label>
+					<select class="popup__select-small">
+						<option value="#">200</option>
+						<option value="#">200</option>
+						<option value="#">200</option>
+						<option value="#">200</option>
+					</select>
+				</div>
+			</div>
+			<div class="popup__comment">
+				Комментарий
+				<textarea></textarea>
+			</div>
+		</div>
+		<input type="submit" value="СЛЕДУЮЩИЙ ШАГ"  class="popup__submit js-nextstep">
+		</div>
+		<!-- end togglme -->
+		<div class="toggleme" hidden>
+			<div class="popup__content ">
+				<div class="popup__left-column">
+					Ваше имя, должность<br />
+					<input type="text" class="popup__text"><br />
+					e-mail<br />
+					<input type="text" class="popup__text"><br />
+				</div>
+				<div class="popup__right-column">
+					Телефон<br />
+					<input type="text" class="popup__text"><br />
+					Название компании<br />
+					<input type="text" class="popup__text"><br />
+				</div>
+			
+				<div class="popup__comment">
+					Реквизиты компании, описание объекта
+					<textarea></textarea>
+				</div>
+			</div>
+			<input type="submit" value="ОТПРАВИТЬ" class="popup__submit">
+		</div>
+	</form>
+</div>
+
+
+<div class="popup popup2" id="popup2">
+	<form>
+		<div class="popup__close"></div>
+		<h3 class="popup__heading">Заказать обратный звонок</h3>
+		<div class="popup__content popup__content_blue">
+			<div class="popup__left-column">
+				Ваше имя, должность<br />
+				<input type="text" class="popup__text"><br />
+				e-mail<br />
+				<input type="text" class="popup__text"><br />
+			</div>
+			<div class="popup__right-column">
+				Телефон<br />
+				<input type="text" class="popup__text"><br />
+				Название компании<br />
+				<input type="text" class="popup__text"><br />
+			</div>
+		</div>
+		<input type="submit" value="ПЕРЕЗВОНИТЕ МНЕ" class="popup__submit">
+	</form>
+</div>
+
+<div class="overlay"></div>
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </body>
 </html>
