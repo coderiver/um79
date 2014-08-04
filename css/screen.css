@@ -67,16 +67,16 @@ body { background: white; }
 
 .logo { font-family: pn bold; font-size: 16px; width: 100px; padding: 45px 0px 0px 87px; height: 81px; display: block; line-height: 1.6; float: left; color: white; background: url(../img/logo.png) no-repeat left center; }
 
-.sidebar__menu { width: 100%; float: left; clear: both; margin-top: 128px; margin-top: 85px; margin-left: 89px; position: relative; z-index: 200; margin-left: 0; padding-left: 89px; width: auto; }
+.sidebar__menu { width: 100%; float: left; clear: both; margin-top: 128px; margin-top: 83px; margin-left: 89px; position: relative; z-index: 200; margin-left: 0; padding-left: 89px; width: auto; }
 #indexpage .sidebar__menu { margin-top: 120px; }
 
 .sidebar__item { float: left; clear: both; margin-top: 5px; }
 
-.sidebar__link { float: left; clear: both; font-family: pn regular; display: block; padding: 14px 15px 13px 15px; line-height: 1; letter-spacing: 0.4px; color: white; background: black; opacity: 0.8; -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease; }
+.sidebar__link { float: left; clear: both; font-family: pn regular; display: block; padding: 14px 15px 13px 15px; line-height: 1; letter-spacing: 0.4px; color: white; background: black; opacity: 0.8; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease; }
 
 .sidebar__link:hover { color: white; background: #18cb64; }
 
-.is-selected-sl { border: 1px solid #18cb64; color: #18cb64; padding: 13px 14px 13px 14px; background: none; }
+.is-selected-sl { border: 1px solid #18cb64; color: #18cb64; padding: 14px 14px 13px 14px; background: none; }
 
 .header__content { margin-left: 28%; }
 
