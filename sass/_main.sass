@@ -38,6 +38,7 @@ body
 	.header__in
 		max-width: 1600px
 		min-width: 1024px
+		min-width: 980px 
 		width: 95.708%
 		max-width: 1460px
 		padding: 0px 2.146% 0px 2.146%
@@ -63,6 +64,12 @@ body
 		-webkit-background-size:  cover
 		-o-background-size:  cover
 		background-size:   cover
+		&.header__mediaover1
+			background: none 
+			+gh(rgba(#c00,.6),rgba(#ff0,.6))
+		&.header__mediaover2
+			background: none 
+			+gh(rgba(#0f0,.6),rgba(#f00,.6))
 	.header__media
 		position: absolute
 		top: 0
@@ -127,6 +134,9 @@ body
 	width: auto
 	#indexpage &
 		margin-top: 120px 
+		@media only screen and (max-width: 1050px)
+			margin-top: 70px 
+			
 .sidebar__item
 	float: left
 	clear: both
@@ -150,12 +160,12 @@ body
 .is-selected-sl
 	border: 1px solid #18cb64
 	color: #18cb64
-	padding: 14px 14px 13px 14px
+	padding: 13px 14px 13px 14px
 	background: none
 
 	
 .header__content
-	margin-left: 28%
+	margin-left: 26.5%
 	
 .header__button
 	font-family: pn semibold
@@ -200,13 +210,15 @@ body
 	font-size: 16px
 	color: white
 	margin-top: 109px
-	
+
 .header__heading
 	float: left
 	margin-top: 173px
 	width: 100%
 	text-align: left
 	font-weight: normal
+	@media only screen and (max-width: 1050px)
+		margin-top: 118px 
 	h1
 		display: block
 		float: left
@@ -230,7 +242,7 @@ body
 	clear: both
 	float: left
 	padding-top: 23%
-	
+	position: relative
 .promo__bottom
 	position: relative
 	float: left
@@ -420,6 +432,7 @@ body
 	line-height: 1.8
 	letter-spacing: 0px
 	display: block
+	+transition(all .3s linear)
 .news__date
 	font-family: pn regular
 	color: black
@@ -437,6 +450,8 @@ body
 	float: left
 	margin-top: 10px
 	letter-spacing: 1.6px
+	&:hover
+		border-bottom-color: #FFF 
 	
 
 .object
@@ -577,6 +592,9 @@ body
 	a
 		color: #13ba5a
 		margin-left: 5px
+		+transition(all .2s linear)
+		&:hover
+			color: #09438B 
 .flexmedia
 	padding-left: 42px
 	background: url(../img/icons/flex.png) no-repeat left center
@@ -589,6 +607,9 @@ body
 	color: #616161
 	width: 120px
 	margin-right: 42px
+	+transition(all .2s linear)
+	&:hover
+		color: #09438B 
 
 
 
@@ -665,11 +686,15 @@ body
 				// border-top: 4px solid #18cb64
 				color: #18cb64
 				// margin-top: -4px
+			&.is-active
+				a
+					color: #18cb64
 				
 
 
 .news__company1-0
 	margin-top: 7%
+	margin-top: 100px 
 	min-height: 20px 
 				
 .comp-r
@@ -761,6 +786,9 @@ body
 	float: left
 	clear: both
 	line-height: 1
+	+transition(all .2s linear)
+	&:hover
+		color: #383838 
 .grlink-first
 	margin-top: 13px
 	background: url(../img/icons/grlink-first.png) no-repeat left center
@@ -800,6 +828,7 @@ body
 	float: left
 	margin-bottom: 33px
 	margin-top: 4px
+	+transition(all .2s linear)
 	&.is-active
 		color: #383838
 .is-selected__year
@@ -868,6 +897,7 @@ body
 	color: #10498e
 	span
 		border-bottom: 1px solid #10498e
+		border-bottom-color: #fff 
 .news1-1-r__date
 	font-family: pn regular
 	font-size: 12px
@@ -895,6 +925,9 @@ body
 	font-size: 14px
 	color: #13ba5a
 	margin: 0px 4px 0px 1px 
+	+transition(all .3s linear)
+	&:hover
+		color: #383838 
 .news1-1-r__button-active
 	color: #383838
 	background: #fbeb93
@@ -903,6 +936,8 @@ body
 .news1-1-r__buttons
 	float: right
 	padding-top: 2px
+	white-space: nowrap
+	text-align: right
 	a
 		width: 104px
 		padding: 14px 0px 14px 0px
@@ -912,6 +947,7 @@ body
 		display: block
 		float: left
 		margin: 0px 4px 0px 4px
+		display: inline-block
 .news1-1-r__prev
 	background: #ebebeb
 	color: #b2b2b2
@@ -996,7 +1032,6 @@ body
 	height: 565px
 	float: left
 	clear: both
-	background: url(../img/mymap.png) no-repeat left center
 	position: relative
 	#actualmap
 		position: absolute
@@ -1528,6 +1563,9 @@ body
 		b
 			border-bottom: 1px dotted #4995f0
 			font-weight: normal
+		&:hover
+			b
+				border-bottom-color: #F8F8F8 
 		&.is-active
 			background: #4995f0
 			color: #fff 
@@ -1535,6 +1573,8 @@ body
 			position: relative
 			span
 				bottom: none 
+			b
+				border-bottom-style: none
 			&:before
 				width: 5px
 				height: 4px
@@ -1544,6 +1584,9 @@ body
 				top: 50%
 				margin-top: -2px  
 				background: url(../img/select-arrow.png) no-repeat 0 0
+			&:hover
+				b
+					border-bottom-style: none
 		&.is-rotated
 			&:before
 				+transform(rotate(180deg))
@@ -1590,6 +1633,8 @@ body
 		color: #484848
 		font-family: pn regular
 		font-size: 14px
+		position: relative
+		z-index: 3 
 	.search__keyword:placeholder
 		color: #aaaaaa
 		font-family: pn regular
@@ -1599,10 +1644,13 @@ body
 	.search__dropdown
 		position: absolute
 		top: 46px
-		right: 0px
+		right: -42px
 		opacity: 0
 		visibility: hidden
 		+transition(all 0.5s ease)
+		width: 288px 
+		box-shadow: 0 0 20px rgba(#000, .3)
+		z-index: 2 
 .search__button
 	position: absolute
 	top: 16px
@@ -1623,11 +1671,10 @@ body
 .search__dropdown
 	li
 		a
-			float: left
-			clear: both
+			display: block
 			background: white
 			color: #18cb64
-			width: 100%
+			// width: 100%
 			padding: 15px 27px 10px 15px
 		a:hover
 			color: white
@@ -1928,6 +1975,8 @@ select
 		width: 570px
 		margin: 0 auto
 		border-bottom: 1px solid blue
+		display: inline-block
+		width: auto
 		span
 			border-bottom: none
 	.history__head
@@ -1963,6 +2012,7 @@ select
 		
 	.header__content
 		margin-left: 27%
+		margin-left: 26% 
 	.promo__menu
 		width: 74%
 	.sidebar__object
@@ -1985,9 +2035,9 @@ select
 		width: 74%
 		padding-right: 0px
 
-=r1
-	@media only screen and (max-width: 1280px)
+=r2
+	@media only screen and (max-width: 1024px)
 		@content
-+r1
++r2
 	.promo__link
 		padding: 24px 1.57% 0px 1.6%

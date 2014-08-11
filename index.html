@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Template</title>
-	<meta name="viewport" content="initial-scale=1"/>
+	<meta name="viewport" content="width=1200">
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 </head>
@@ -13,18 +13,29 @@
 
 	<div class="header__medias" id="header__medias">
 		<div class="header__media" style="background: url(img/layer57psd.jpg) no-repeat;background-size: cover">
-			
-			<div class="header__mediaover"></div>
-		</div>
-		<div class="header__media" style="background: url(img/layer57psd.jpg) no-repeat;background-size: cover">
-			<video id="vi" autoplay="autoplay" loop muted>
+			<video id="vi1" autoplay="autoplay" poster="MYPOSTER.jpg" loop muted>
 				<source src="video/tnt24.ogv" type='video/ogg'>
 				<source src="video/tnt24.mp4" type='video/mp4'>
 				<source src="video/tnt24.webm" type='video/webm'>
 			</video>
-			
+			<div class="header__mediaover"></div>
 		</div>
-		<div class="header__media" style="background: url(img/layer57psd.jpg) no-repeat;background-size: cover"></div>
+		<div class="header__media" style="background: url(img/poster.jpg) no-repeat;background-size: cover">
+			<video id="vi2" autoplay="autoplay" poster="MYPOSTER.jpg" loop muted>
+				<source src="video/tnt24.ogv" type='video/ogg'>
+				<source src="video/tnt24.mp4" type='video/mp4'>
+				<source src="video/tnt24.webm" type='video/webm'>
+			</video>
+			<div class="header__mediaover header__mediaover2"></div>
+		</div>
+		<div class="header__media" style="background: url(img/layer57psd.jpg) no-repeat;background-size: cover">
+			<video id="vi3" autoplay="autoplay" poster="MYPOSTER.jpg" loop muted>
+				<source src="video/tnt24.ogv" type='video/ogg'>
+				<source src="video/tnt24.mp4" type='video/mp4'>
+				<source src="video/tnt24.webm" type='video/webm'>
+			</video>
+			<div class="header__mediaover header__mediaover1"></div>
+		</div>
 	</div>
 	<div class="header__in">
 	<div class="header__sidebar">
@@ -55,9 +66,6 @@
 		<div class="promo__bottom">
 			<div class="sidebar__object">
 				<div id="pagi">
-				<!-- <a href="#" class="sidebar__line is-selected-video"></a>
-				<a href="#" class="sidebar__line"></a>
-				<a href="#" class="sidebar__line"></a> -->
 				</div>
 				<div id="objs">
 					<div class="obj">
