@@ -35,6 +35,7 @@ body
 	height: 425px 
 	#indexpage &
 		height: auto 
+		
 	.header__in
 		max-width: 1600px
 		min-width: 1024px
@@ -46,6 +47,9 @@ body
 		+clr
 		position: relative
 		z-index: 2 
+		#indexpage &
+			height: 768px 
+			overflow: hidden
 	.header__medias
 		position: absolute
 		top: 0
@@ -60,6 +64,7 @@ body
 		left: 0
 		bottom: 0
 		right: 0
+		z-index: 1 
 		background: url(../img/filter-bg.png) repeat-x   
 		-webkit-background-size:  cover
 		-o-background-size:  cover
@@ -251,6 +256,10 @@ body
 		z-index: 1
 		height: 425px  
 		padding: 0 
+		#indexpage &
+			width: 97%
+			height: auto 
+			bottom: 0 
 		
 .promo__bottom
 	position: relative
