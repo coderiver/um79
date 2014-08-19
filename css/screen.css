@@ -51,10 +51,10 @@ body { background: white; }
 .index01 { background-size: cover; background-position: center top; }
 
 .header { position: relative; height: 425px; }
-#indexpage .header { height: auto; }
+#indexpage .header { height: 100%; }
 .header .header__in { max-width: 1600px; min-width: 1024px; min-width: 980px; width: 95.708%; max-width: 1460px; padding: 0px 2.146% 0px 2.146%; margin: 0 auto; *zoom: 1; position: relative; z-index: 2; }
 .header .header__in:after { content: " "; display: table; clear: both; }
-#indexpage .header .header__in { height: 768px; overflow: hidden; }
+#indexpage .header .header__in { overflow: hidden; height: 100%; min-height: 728px; }
 .header .header__medias { position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 1; overflow: hidden; }
 .header .header__mediaover { position: absolute; top: 0; left: 0; bottom: 0; right: 0; z-index: 1; background: url(../img/filter-bg.png) repeat-x; -webkit-background-size: cover; -o-background-size: cover; background-size: cover; }
 .header .header__mediaover.header__mediaover1 { background: none; background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(204, 0, 0, 0.6)), color-stop(100%, rgba(255, 255, 0, 0.6))); background-image: -webkit-linear-gradient(left, rgba(204, 0, 0, 0.6), rgba(255, 255, 0, 0.6)); background-image: -moz-linear-gradient(left, rgba(204, 0, 0, 0.6), rgba(255, 255, 0, 0.6)); background-image: -o-linear-gradient(left, rgba(204, 0, 0, 0.6), rgba(255, 255, 0, 0.6)); background-image: linear-gradient(left, rgba(204, 0, 0, 0.6), rgba(255, 255, 0, 0.6)); }
