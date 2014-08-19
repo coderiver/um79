@@ -594,15 +594,15 @@ select { text-indent: 5px; }
 
 .popup__text { margin-top: 13px; width: 185px; border: 1px solid #9ea4a1; padding: 2px; margin-bottom: 35px; }
 
-@media only screen and (max-width: 1450px) { .object { width: 69%; padding-right: 5%; }
+@media only screen and (max-width: 1200px) { .object { width: 69%; padding-right: 5%; }
   .wrp-history { width: 100%; padding-top: 60px; clear: both; }
   .history { float: none; margin: 0 auto; width: 1004px; clear: both; padding: 1px; width: 980px; }
   .history__block { float: none; width: 90%; padding: 32px 5% 32px 5%; background: url(../img/history.jpg); }
   .history__heading { display: block; width: 570px; margin: 0 auto; border-bottom: 1px solid blue; display: inline-block; width: auto; }
   .history__heading span { border-bottom: none; }
   .history__head { display: none; }
-  .history__bottom { display: none; }
-  .footer__logo { width: 28%; padding-right: 6%; }
+  .history__bottom { display: none; } }
+@media only screen and (max-width: 1450px) { .footer__logo { width: 28%; padding-right: 6%; }
   .promo__link span.promo__ctlg { font-size: 12px; }
   .news { float: left; width: 22%; padding: 50px 4% 0px 0%; }
   .header__sidebar { position: absolute; top: 38px; left: 0px; width: 26%; }
