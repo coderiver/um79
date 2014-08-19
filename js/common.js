@@ -1,4 +1,24 @@
 head.ready(function() {	
+
+	var vi2 = "";
+	vi2 += '<video id="vi2" autoplay="autoplay" poster="MYPOSTER.jpg" loop muted>';
+	vi2 += 	'<source src="video/tnt24.ogv" type="video/ogg">';
+	vi2 += 	'<source src="video/tnt24.mp4" type="video/mp4">';
+	vi2 += 	'<source src="video/tnt24.webm" type="video/webm">';
+	vi2 +=  '</video>';
+	var vi3 = "";
+	vi3 += '<video id="vi3" autoplay="autoplay" poster="MYPOSTER.jpg" loop muted>';
+	vi3 += 	'<source src="video/tnt24.ogv" type="video/ogg">';
+	vi3 += 	'<source src="video/tnt24.mp4" type="video/mp4">';
+	vi3 += 	'<source src="video/tnt24.webm" type="video/webm">';
+	vi3 +=  '</video>';
+	//$("#videoDiv").html(html);
+
+	// $('#someVideo').attr('src', url);
+	// $('#someVideo')[0].load();
+	function loadvideo(idd,vi){
+		$('[data-video='+idd+']').append(vi);
+	}
 	if($('#header__medias').length){
 		$('#header__medias').cycle({
 		    speed: 600,
@@ -20,9 +40,11 @@ head.ready(function() {
 		    console.log(opts);
 		    $('#objs').cycle('goto', opts.nextSlide);
 		    if(opts.nextSlide==1){
+		    	loadvideo('vi2',vi2);
 		    	$('#vi2').get(0).play();
 		    }
 		    if(opts.nextSlide==2){
+		    	loadvideo('vi3',vi3);
 		    	$('#vi3').get(0).play();
 		    }
 		    if(opts.nextSlide==0){
