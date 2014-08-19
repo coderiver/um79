@@ -2,13 +2,14 @@ head.ready(function() {
 	if($('#header__medias').length){
 		$('#header__medias').cycle({
 		    speed: 600,
-		    timeout: 0,
+		    timeout: 5000,
 		    manualSpeed: 400,
 		    slides: '.header__media',
 		    pager: '#pagi'
 		});
 		$('#objs').cycle({
 		    speed: 600,
+		    timeout: 0,
 		    manualSpeed: 400,
 		    slides: '.obj'
 		});
