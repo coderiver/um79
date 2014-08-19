@@ -104,6 +104,7 @@ body
 	top: 38px
 	left: 0px
 	width: 26.6%
+	z-index: 3 
 	#indexpage &
 		left: 2% 
 	
@@ -166,6 +167,8 @@ body
 	
 .header__content
 	margin-left: 26.5%
+	z-index: 4
+	position: relative 
 	
 .header__button
 	font-family: pn semibold
@@ -243,6 +246,12 @@ body
 	float: left
 	padding-top: 23%
 	position: relative
+	&.promo_bottom
+		position: absolute
+		z-index: 1
+		height: 425px  
+		padding: 0 
+		
 .promo__bottom
 	position: relative
 	float: left

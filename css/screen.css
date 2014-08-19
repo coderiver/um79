@@ -66,7 +66,7 @@ body { background: white; }
 
 .header { float: left; width: 100%; position: relative; }
 
-.header__sidebar { position: absolute; top: 38px; left: 0px; width: 26.6%; }
+.header__sidebar { position: absolute; top: 38px; left: 0px; width: 26.6%; z-index: 3; }
 #indexpage .header__sidebar { left: 2%; }
 
 .logo { font-family: pn bold; font-size: 16px; width: 100px; padding: 45px 0px 0px 87px; height: 81px; display: block; line-height: 1.6; float: left; color: white; background: url(../img/logo.png) no-repeat left center; }
@@ -83,7 +83,7 @@ body { background: white; }
 
 .is-selected-sl { border: 1px solid #18cb64; color: #18cb64; padding: 13px 14px 13px 14px; background: none; }
 
-.header__content { margin-left: 26.5%; }
+.header__content { margin-left: 26.5%; z-index: 4; position: relative; }
 
 .header__button { font-family: pn semibold; font-size: 11px; line-height: 1; display: block; float: left; margin-top: 99px; margin-right: 17px; letter-spacing: 1.2px; cursor: pointer; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; }
 
@@ -108,6 +108,7 @@ body { background: white; }
 .header__heading h1 a:hover { border: none; }
 
 .promo { width: 100%; clear: both; float: left; padding-top: 23%; position: relative; }
+.promo.promo_bottom { position: absolute; z-index: 1; height: 425px; padding: 0; }
 
 .promo__bottom { position: relative; float: left; clear: both; width: 100%; position: absolute; bottom: 0; }
 
