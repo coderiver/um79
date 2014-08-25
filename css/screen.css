@@ -51,7 +51,7 @@ body { background: white; }
 .index01 { background-size: cover; background-position: center top; }
 
 .header { position: relative; height: 425px; }
-#indexpage .header { height: 100%; }
+#indexpage .header { height: 100%; min-height: 728px; }
 .header .header__in { max-width: 1600px; min-width: 1024px; min-width: 980px; width: 95.708%; max-width: 1460px; padding: 0px 2.146% 0px 2.146%; margin: 0 auto; *zoom: 1; position: relative; z-index: 2; }
 .header .header__in:after { content: " "; display: table; clear: both; }
 #indexpage .header .header__in { overflow: hidden; height: 100%; min-height: 728px; }
@@ -67,7 +67,7 @@ body { background: white; }
 
 .header { float: left; width: 100%; position: relative; }
 
-.header__sidebar { position: absolute; top: 38px; left: 0px; width: 26.6%; z-index: 3; }
+.header__sidebar { position: absolute; top: 38px; left: 0px; width: 26.6%; z-index: 300; width: 23%; }
 #indexpage .header__sidebar { left: 2%; }
 
 .logo { font-family: pn bold; font-size: 16px; width: 100px; padding: 45px 0px 0px 87px; height: 81px; display: block; line-height: 1.6; float: left; color: white; background: url(../img/logo.png) no-repeat left center; }
@@ -110,11 +110,11 @@ body { background: white; }
 
 .promo { width: 100%; clear: both; float: left; padding-top: 23%; position: relative; }
 .promo.promo_bottom { position: absolute; z-index: 1; height: 425px; padding: 0; }
-#indexpage .promo.promo_bottom { width: 97%; height: auto; bottom: 0; }
+#indexpage .promo.promo_bottom { width: 95.708%; padding: 0px 2.146% 0px 2.146%; height: auto; bottom: 0; left: 0; }
 
 .promo__bottom { position: relative; float: left; clear: both; width: 100%; position: absolute; bottom: 0; }
 
-.sidebar__object { float: left; width: 18.55%; padding: 0px 2% 0px 6.05%; clear: both; position: absolute; bottom: 0px; height: 104px; left: 0px; }
+.sidebar__object { float: left; width: 18.55%; padding: 0px 2% 0px 6.05%; clear: both; position: absolute; bottom: 0px; height: 104px; left: 2%; }
 
 #pagi { *zoom: 1; margin-bottom: -23px; position: relative; z-index: 200; }
 #pagi:after { content: " "; display: table; clear: both; }
@@ -610,7 +610,7 @@ select { text-indent: 5px; }
   .header__sidebar { position: absolute; top: 38px; left: 0px; width: 26%; }
   #indexpage .header__sidebar { left: 2%; }
   .sidebar__menu { width: 100%; float: left; clear: both; margin-top: 128px; margin-left: 0px; padding-left: 0; }
-  .header__content { margin-left: 27%; margin-left: 26%; }
+  .header__content { margin-left: 27%; margin-left: 26%; margin-left: 0; position: absolute; left: 26%; z-index: 400; right: 2%; }
   .promo__menu { width: 74%; }
   .sidebar__object { float: left; width: 19%; padding: 0px 7% 0px 0%; clear: both; position: absolute; }
   .pg { float: right; width: 74%; }
