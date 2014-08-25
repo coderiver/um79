@@ -84,7 +84,7 @@ body { background: white; }
 
 .is-selected-sl { border: 1px solid #18cb64; color: #18cb64; padding: 13px 14px 13px 14px; background: none; }
 
-.header__content { margin-left: 26.5%; z-index: 4; position: relative; }
+.header__content { margin-left: 26.5%; margin-left: 25.5%; margin-left: 0; left: 26%; z-index: 4; position: relative; position: absolute; right: 2%; }
 
 .header__button { font-family: pn semibold; font-size: 11px; line-height: 1; display: block; float: left; margin-top: 99px; margin-right: 17px; letter-spacing: 1.2px; cursor: pointer; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; }
 
@@ -127,7 +127,7 @@ body { background: white; }
 
 .sidebar__object-date { float: left; clear: both; color: white; opacity: 0.5; font-family: pn regular; font-size: 12px; line-height: 1.8; letter-spacing: 1.5px; margin-top: 3px; }
 
-.promo__menu { float: left; width: 73.4%; position: absolute; bottom: 0px; right: 0px; height: 104px; overflow: hidden; padding-top: 28px; }
+.promo__menu { float: left; width: 73.4%; width: 74%; position: absolute; bottom: 0px; right: 0px; height: 104px; overflow: hidden; padding-top: 28px; }
 
 .promo__item { background: #28dd75; position: relative; top: 104px; -webkit-transition: all 0.6s ease; -moz-transition: all 0.6s ease; -o-transition: all 0.6s ease; transition: all 0.6s ease; }
 .promo__item + .promo__item { -webkit-transition-delay: 0.2s; -moz-transition-delay: 0.2s; -o-transition-delay: 0.2s; transition-delay: 0.2s; }
@@ -159,7 +159,10 @@ body { background: white; }
 
 .content { clear: both; width: 100%; float: left; padding-top: 40px; margin-bottom: 70px; }
 
-.news { float: left; width: 16.55%; padding: 74px 4% 0px 6.05%; }
+.news { float: left; width: 16.55%; width: 15.55%; padding: 74px 4% 0px 6.05%; }
+
+#indexpage .news { width: 15%; }
+@media only screen and (max-width: 1450px) { #indexpage .news { width: 21%; } }
 
 .news__icon { display: block; width: 24px; height: 24px; background: url(../img/icons/internt_web_technology.png) no-repeat center center; margin-bottom: 37px; }
 
@@ -211,10 +214,10 @@ body { background: white; }
 .flexmedia { padding-left: 42px; background: url(../img/icons/flex.png) no-repeat left center; font-family: pn regular; font-size: 14px; margin-top: 36px; display: block; line-height: 1.4; float: right; color: #616161; width: 120px; margin-right: 42px; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
 .flexmedia:hover { color: #09438b; }
 
-.pg { float: right; width: 73.4%; position: absolute; right: 0; bottom: 0; }
+.pg { float: right; width: 73.4%; width: 74%; position: absolute; left: 26%; bottom: 0; }
 
-.pg__heading { position: absolute; left: 0; bottom: 147px; height: 38px; }
-.pg__heading h1 { display: block; float: left; width: 680px; letter-spacing: 2.9px; line-height: 1.55; font-size: 40px; color: white; font-family: pn bold; margin-left: -3px; font-weight: normal; }
+.pg__heading { position: absolute; left: 0; bottom: 147px; height: 38px; bottom: 175px; }
+.pg__heading h1 { display: block; float: left; width: 680px; letter-spacing: 2.9px; line-height: 1.55; font-size: 40px; color: white; font-family: pn bold; font-weight: normal; }
 
 .pg__menu { width: 100%; clear: both; float: left; position: relative; padding-top: 128px; z-index: 201; }
 .pg__menu .pg__menuline { position: absolute; bottom: 70px; height: 4px; background: #18cb64; left: 0; width: 100px; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
@@ -226,7 +229,11 @@ body { background: white; }
 
 .news__company1-0 { margin-top: 7%; margin-top: 100px; min-height: 20px; }
 
+.news.news__company1-0 { width: 22%; }
+@media only screen and (min-width: 1450px) { .news.news__company1-0 { width: 15.55%; width: 15.75%; } }
+
 .comp-r { float: right; width: 73.4%; padding-top: 18px; }
+@media only screen and (min-width: 1450px) { .comp-r { width: 74%; } }
 
 .comp-r__text { font-family: pn regular; color: #616161; font-size: 14px; line-height: 1.75; display: block; width: 80.5%; margin-top: 26px; letter-spacing: -0.15px; }
 .comp-r__text a { color: #18cb64; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; }
@@ -270,7 +277,7 @@ body { background: white; }
 .topbg { height: 425px; position: absolute; left: 0; top: 0; right: 0; background-size: cover; }
 .topbg:before { position: absolute; left: 0; top: 0; right: 0; bottom: 0; content: " "; background: url(../img/filter-bg.png) no-repeat 0 0; background-size: cover; }
 
-.news1-1-r { float: right; width: 63.4%; padding-right: 10%; padding-top: 24px; }
+.news1-1-r { float: right; width: 64%; padding-right: 10%; padding-top: 24px; }
 
 .news1-1-r__block { float: left; width: 100%; max-width: 925px; padding-top: 0px; padding-bottom: 56px; border-bottom: 1px solid #e2e2e2; margin-bottom: 47px; }
 
@@ -332,6 +339,7 @@ body { background: white; }
 #mymap__button:hover { color: white; background: #26e577; }
 
 .folio3-0-r { float: right; width: 73.4%; }
+@media only screen and (min-width: 1450px) { .folio3-0-r { width: 74%; } }
 .folio3-0-r .news1-1-r__block { max-width: 980px; }
 .folio3-0-r .news__text { max-width: 900px; }
 
@@ -596,7 +604,7 @@ select { text-indent: 5px; }
 
 .popup__text { margin-top: 13px; width: 185px; border: 1px solid #9ea4a1; padding: 2px; margin-bottom: 35px; }
 
-@media only screen and (max-width: 1200px) { .object { width: 69%; padding-right: 5%; }
+@media only screen and (max-width: 1200px) { .object { width: 69%; width: 70%; padding-right: 5%; }
   .wrp-history { width: 100%; padding-top: 60px; clear: both; }
   .history { float: none; margin: 0 auto; width: 1004px; clear: both; padding: 1px; width: 980px; }
   .history__block { float: none; width: 90%; padding: 32px 5% 32px 5%; background: url(../img/history.jpg); }
@@ -606,7 +614,7 @@ select { text-indent: 5px; }
   .history__bottom { display: none; } }
 @media only screen and (max-width: 1450px) { .footer__logo { width: 28%; padding-right: 6%; }
   .promo__link span.promo__ctlg { font-size: 12px; }
-  .news { float: left; width: 22%; padding: 50px 4% 0px 0%; }
+  .news { float: left; width: 22%; width: 21%; padding: 50px 4% 0px 0%; }
   .header__sidebar { position: absolute; top: 38px; left: 0px; width: 26%; }
   #indexpage .header__sidebar { left: 2%; }
   .sidebar__menu { width: 100%; float: left; clear: both; margin-top: 128px; margin-left: 0px; padding-left: 0; }

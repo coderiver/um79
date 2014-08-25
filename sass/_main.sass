@@ -4,7 +4,15 @@
 +font(pn regular, proxima_nova_regular-webfont)
 +font(pn light, proxima_nova_light-webfont)
 +font(pn thin, proxima_nova_thin-webfont)
-
+=r1
+	@media only screen and (max-width: 1450px)
+		@content
+=r2
+	@media only screen and (min-width: 1450px)
+		@content
+=rcustom
+	@media only screen and (max-width: 1200px)
+		@content
 a
 	text-decoration: none
 body
@@ -176,8 +184,13 @@ body
 	
 .header__content
 	margin-left: 26.5%
+	margin-left: 25.5% 
+	margin-left: 0 
+	left: 26% 
 	z-index: 4
 	position: relative 
+	position: absolute
+	right: 2% 
 	
 .header__button
 	font-family: pn semibold
@@ -325,6 +338,7 @@ body
 .promo__menu
 	float: left
 	width: 73.4%
+	width: 74% 
 	position: absolute
 	bottom: 0px
 	right: 0px
@@ -443,7 +457,12 @@ body
 .news
 	float: left
 	width: 16.55%
+	width: 15.55% 
 	padding: 74px 4% 0px 6.05%
+#indexpage .news
+	width: 15%
+	@media only screen and (max-width: 1450px)
+		width: 21% 
 .news__icon
 	display: block
 	width: 24px
@@ -655,15 +674,18 @@ body
 .pg
 	float: right
 	width: 73.4%
+	width: 74%
 	// padding-top: 101px
 	position: absolute
-	right: 0
+	// right: 0
+	left: 26% 
 	bottom: 0  
 .pg__heading
 	position: absolute
 	left: 0
 	bottom: 147px  
 	height: 38px 
+	bottom: 175px 
 	h1
 		display: block
 		float: left
@@ -673,7 +695,7 @@ body
 		font-size: 40px
 		color: white
 		font-family: pn bold
-		margin-left: -3px
+		// margin-left: -3px
 		font-weight: normal
 .pg__menu
 	width: 100%
@@ -721,11 +743,17 @@ body
 	margin-top: 7%
 	margin-top: 100px 
 	min-height: 20px 
-				
+.news.news__company1-0
+	width: 22% 
+	+r2
+		width: 15.55% 
+		width: 15.75% 
 .comp-r
 	float: right
 	width: 73.4%
 	padding-top: 18px
+	+r2
+		width: 74% 
 .comp-r__text
 	font-family: pn regular
 	color: #616161
@@ -894,7 +922,7 @@ body
 	// 	padding-bottom: 0px
 .news1-1-r
 	float: right
-	width: 63.4%
+	width: 64%
 	padding-right: 10%
 	padding-top: 24px
 .news1-1-r__block
@@ -1135,6 +1163,8 @@ body
 .folio3-0-r
 	float: right
 	width: 73.4%
+	+r2
+		width: 74% 
 	.news1-1-r__block
 		max-width: 980px
 	.news__text
@@ -1972,15 +2002,11 @@ select
 	padding: 2px
 	margin-bottom: 35px
 
-=r1
-	@media only screen and (max-width: 1450px)
-		@content
-=rcustom
-	@media only screen and (max-width: 1200px)
-		@content
+
 +rcustom
 	.object
 		width: 69%
+		width: 70% 
 		padding-right: 5%
 	.wrp-history
 		width: 100%
@@ -2023,6 +2049,7 @@ select
 	.news
 		float: left
 		width: 22%
+		width: 21% 
 		padding: 50px 4% 0px 0%			
 	.header__sidebar
 		position: absolute
