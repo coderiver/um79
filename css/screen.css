@@ -60,7 +60,7 @@ body { background: white; }
 .header .header__mediaover.header__mediaover1 { background: none; background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(204, 0, 0, 0.6)), color-stop(100%, rgba(255, 255, 0, 0.6))); background-image: -webkit-linear-gradient(left, rgba(204, 0, 0, 0.6), rgba(255, 255, 0, 0.6)); background-image: -moz-linear-gradient(left, rgba(204, 0, 0, 0.6), rgba(255, 255, 0, 0.6)); background-image: -o-linear-gradient(left, rgba(204, 0, 0, 0.6), rgba(255, 255, 0, 0.6)); background-image: linear-gradient(left, rgba(204, 0, 0, 0.6), rgba(255, 255, 0, 0.6)); }
 .header .header__mediaover.header__mediaover2 { background: none; background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 255, 0, 0.6)), color-stop(100%, rgba(255, 0, 0, 0.6))); background-image: -webkit-linear-gradient(left, rgba(0, 255, 0, 0.6), rgba(255, 0, 0, 0.6)); background-image: -moz-linear-gradient(left, rgba(0, 255, 0, 0.6), rgba(255, 0, 0, 0.6)); background-image: -o-linear-gradient(left, rgba(0, 255, 0, 0.6), rgba(255, 0, 0, 0.6)); background-image: linear-gradient(left, rgba(0, 255, 0, 0.6), rgba(255, 0, 0, 0.6)); }
 .header .header__media { position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 1; }
-.header .header__media video { position: absolute; top: 0; left: 0; right: 0; bottom: 0; height: 100%; }
+.header .header__media video { position: absolute; right: 0; bottom: 0; min-width: 100%; min-height: 100%; width: auto; height: auto; }
 @media (min-width: 1460px) { .header .header__media video { height: auto; width: 100%; } }
 
 .wrapper { margin: 0 auto; width: 95.708%; max-width: 1460px; padding: 0px 2.146% 0px 2.146%; }
