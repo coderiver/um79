@@ -109,15 +109,16 @@ head.ready(function() {
 	$(".catalog4-2-left,.tofix").sticky({topSpacing:10});
 
 	if($('.pg__menu').length){
+
 		m = $( ".pg__menu li" ).index( $('.pg__menu li.is-active'));
 		if(m==-1){m=0;$( ".pg__menu li:nth-child(1)" ).addClass('is-active');}
-		
-		gotomenu(m);
 		function gotomenu(n){
 			$('.pg__menuline')
 				.css('left',$('.pg__menu li').eq(n).position().left)
 				.css('width',$('.pg__menu li').eq(n).children('a').width());
 		}
+		gotomenu(m);
+		
 
 		$('.pg__menu li').hover(function() {
 			gotomenu($( ".pg__menu li" ).index( $(this) ));
